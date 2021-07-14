@@ -15,3 +15,59 @@ html 태그
 * 의미없이 요소를 묶기 위한 태그(Container)
     * div : block-level
     * span : inline-level
+* 리스트 요소
+    * 자식으로 li 태그를 가짐
+        * ul : 순서가 없는 리스트
+        * ol : 순서가 있는 리스트
+    * 자식으로 dt(용어 명), dd(용어 설명)를 가짐
+        * dl : 용어, 정의를 표현할 때 사용
+* 이미지 요소
+    * img : 문서에 이미지 삽입
+        * src : "이미지 경로"
+            * 상대 경로 : 현재 웹 페이지를 기준으로 상대적인 이미지 위치
+            * 절대 경로 : 실제 그 이미지가 위치한 곳의 전체 경로
+        * alt : 이미지 대체 텍스트
+        * width / height : 이미지 크기 지정
+* 테이블 요소
+    * table : 표를 나타냄
+        * caption : 표의 제목
+        * thead : 제목 행 그룹화
+            * tr : 행
+            * th : 제목 셀
+        * tbody : 본문 행 그룹화
+            * tr : 행
+            * td : 셀
+        * tfoot : 바닥 행 그룹화
+            * tr : 행
+            * td : 셀
+        * rowspan : 셀 세로 방향 병합 (속성 값 : 병합할 셀의 개수)
+        * colspan : 셀 가로 방향 병합 (속성 값 : 병합할 셀의 개수)
+* 폼 요소
+    * form : 폼 요소들을 감싸는 태그, 데이터들을 묶어서 실제 서버로 전송
+        * action : 데이터를 처리하기 위한 서버의 주소
+        * method : 데이터 전송 방식 (get : 주소창에 데이터 노출, post : 데이터 노출 X)
+    * input : 서버에 데이터 전달
+        * type 속성
+        * text : 단순한 텍스트 입력 
+            * placeholder : 입력 전 미리 화면에 노출하는 값
+        * password : 암호와 같이 공개할 수 없는 내용 입력
+        * radio : 중복 선택 불가한 항목 (남, 여)
+            * name : 항목들을 그룹으로 묶어줌
+            * checked : 초기에 선택될 항목 
+        * checkbox :중복 선택 가능 항목 (취미)
+            * name : 항목들을 그룹으로 묶어줌
+        * submit : form의 값을 전송
+        * reset : form의 값 초기화
+        * button : 아무 기능이 없는 버튼
+        * submit, reset, button의 경우 value 속성으로 버튼 이름 설정 
+        * image : 이미지 삽입 가능한 버튼
+    * select : 선택 목록 상자, 콤보 박스
+        * option : 각 항목을 리스트 형태로 노출
+            * selected : 초기 선택될 항목
+    * textarea : 여러 줄의 텍스트 입력 가능
+        * cols, rows : 가로, 세로 크기 조절
+    * button : 버튼을 만들 때 사용, submit, reset, button 3가지 타입
+    * label : label 클릭 시 해당 폼 요소 클릭한 것 처럼 동작, lable의 for 속성 값과 form 요소의 id 속성값을 동일하게
+    * fieldset : 여러 개의 폼 요소를 구조화
+        * legend : 폼 요소의 제목으로 fieldset 내부에 작성
+
