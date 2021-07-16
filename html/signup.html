@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+        h2{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            width: 600px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: pink;
+        }
+        table{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        td.head{
+            border: 1px solid black;
+            width: 150px;
+            text-align: center;
+        }
+        td.info{
+            border: 1px solid black;
+            width: 362px;
+        }
+        fieldset{
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            width: 600px;
+            height: 300px;;
+
+        }
+        legend{
+            text-align: center;
+        }
+        div.btn{
+            display: flex;
+            justify-content: center;
+        }
+        .btn button{
+            border: none;
+            border-radius: 10px;
+            width: 100px;
+            height: 30px;
+            margin: 20px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form action="#">
+        <fieldset>
+            <legend>필수 정보 입력</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="head">아이디</td>
+                        <td class="info"><input type="text" placeholder="아이디 입력">
+                        <button type="button">중복 확인</button></td>
+                    </tr>
+                    <tr>
+                        <td class="head">비밀번호</td>
+                        <td class="info"><input type="password" placeholder="영문, 숫자 조합으로 입력"></td>
+                    </tr>
+                    <tr>
+                        <td class="head">이름</td>
+                        <td class="info"><input type="text" placeholder="이름 또는 닉네임 입력"></td>
+                    </tr>
+                    <tr>
+                        <td class="head">성별</td>
+                        <td class="info"><input type="radio" name="gender" checked>남자<input type="radio" name="gender">여자</td>
+                    </tr>
+                    <tr>
+                        <td class="head">휴대폰 번호</td>
+                        <td class="info"><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+                            <small>ex) 010-1234-5678</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head">이메일</td>
+                        <td class="info"><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="head">생년월일</td>
+                        <td class="info"><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="head">주소</td>
+                        <td class="info"><input type="text">
+                            <button type="button">검색</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head">프로필 사진</td>
+                        <td class="info"><input type="file"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>추가 정보 입력</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="head">취미</td>
+                        <td class="info">
+                            <input type="checkbox" name="hobby">독서
+                            <input type="checkbox" name="hobby">영화
+                            <input type="checkbox" name="hobby">게임
+                            <input type="checkbox" name="hobby">운동
+                            <input type="checkbox" name="hobby">기타
+                            <input type="text" placeholder="직접 입력">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head">간단 자기소개</td>
+                        <td class="info"><textarea name="" id="" cols="42" rows="8"placeholder="자기소개는 짧게 해주세요"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <div class="btn">
+            <button type="submit">제출</button>
+            <button type="reset">새로 입력</button>
+        </div>
+    </form>
+    
+</body>
+</html>
