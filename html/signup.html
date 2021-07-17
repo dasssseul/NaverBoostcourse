@@ -75,39 +75,39 @@
             <table>
                 <tbody>
                     <tr>
-                        <td class="head">아이디</td>
-                        <td class="info"><input type="text" placeholder="아이디 입력">
+                        <td class="head"><label for="userid">아이디</label></td>
+                        <td class="info"><input type="text" placeholder="아이디 입력" id="userid">
                         <button type="button">중복 확인</button></td>
                     </tr>
                     <tr>
-                        <td class="head">비밀번호</td>
-                        <td class="info"><input type="password" placeholder="영문, 숫자 조합으로 입력"></td>
+                        <td class="head"><label for="password">비밀번호</label></td>
+                        <td class="info"><input type="password" placeholder="영문, 숫자 조합으로 입력" id="password"></td>
                     </tr>
                     <tr>
-                        <td class="head">이름</td>
-                        <td class="info"><input type="text" placeholder="이름 또는 닉네임 입력"></td>
+                        <td class="head"><label for="name">이름</label></td>
+                        <td class="info"><input type="text" placeholder="이름 또는 닉네임 입력" id="name"></td>
                     </tr>
                     <tr>
                         <td class="head">성별</td>
-                        <td class="info"><input type="radio" name="gender" checked>남자<input type="radio" name="gender">여자</td>
+                        <td class="info"><input type="radio" name="gender" id="male" checked><label for="male">남자</label><input type="radio" name="gender" id="female"><label for="female">여자</label></td>
                     </tr>
                     <tr>
-                        <td class="head">휴대폰 번호</td>
-                        <td class="info"><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+                        <td class="head"><label for="tel">휴대폰 번호</label></td>
+                        <td class="info"><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" id="tel" required>
                             <small>ex) 010-1234-5678</small>
                         </td>
                     </tr>
                     <tr>
-                        <td class="head">이메일</td>
-                        <td class="info"><input type="email"></td>
+                        <td class="head"><label for="email">이메일</label></td>
+                        <td class="info"><input type="email" id="email"></td>
                     </tr>
                     <tr>
-                        <td class="head">생년월일</td>
-                        <td class="info"><input type="date"></td>
+                        <td class="head"><label for="birth">생년월일</label></td>
+                        <td class="info"><input type="date" id="birth"></td>
                     </tr>
                     <tr>
-                        <td class="head">주소</td>
-                        <td class="info"><input type="text">
+                        <td class="head"><label for="address">주소</label></td>
+                        <td class="info"><input type="text" id="address">
                             <button type="button">검색</button>
                         </td>
                     </tr>
@@ -125,17 +125,17 @@
                     <tr>
                         <td class="head">취미</td>
                         <td class="info">
-                            <input type="checkbox" name="hobby">독서
-                            <input type="checkbox" name="hobby">영화
-                            <input type="checkbox" name="hobby">게임
-                            <input type="checkbox" name="hobby">운동
-                            <input type="checkbox" name="hobby">기타
-                            <input type="text" placeholder="직접 입력">
+                            <input type="checkbox" name="hobby" id="reading"><label for="reading">독서</label>
+                            <input type="checkbox" name="hobby" id="movie"><label for="movie">영화</label>
+                            <input type="checkbox" name="hobby" id="game"><label for="game">게임</label>
+                            <input type="checkbox" name="hobby" id="exercise"><label for="exercise">운동</label>
+                            <input type="checkbox" name="hobby" id="etc"><label for="etc">기타</label>
+                            <input type="text" name="hobby" placeholder="직접 입력">
                         </td>
                     </tr>
                     <tr>
-                        <td class="head">간단 자기소개</td>
-                        <td class="info"><textarea name="" id="" cols="42" rows="8"placeholder="자기소개는 짧게 해주세요"></textarea></td>
+                        <td class="head"><label for="introduce">간단 자기소개</label></td>
+                        <td class="info"><textarea name="introduce" id="" cols="42" rows="8" id="introduce" placeholder="자기소개는 짧게 해주세요"></textarea></td>
                     </tr>
                 </tbody>
             </table>
