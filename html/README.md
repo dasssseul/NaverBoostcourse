@@ -71,3 +71,38 @@ html 태그
     * fieldset : 여러 개의 폼 요소를 구조화
         * legend : 폼 요소의 제목으로 fieldset 내부에 작성
 
+
+콘텐츠 모델
+
+    * metadata : 콘텐츠의 style, script을 설정하거나 다른 문서와의 관계 등의 정보를 포함하는 요소
+        * head 태그 내에 들어가는 태그 (link, meta, script, style, title)
+    * flow : 문서에 사용되는 대부분의 요소
+        * 태그의 대부분이 해당
+    * sectioning : heading과 footer의 범위를 결정하는 요소, 아웃라인
+        * 문서의 구조와 관련된 태그 (aside, nav, section)
+    * heading : 섹션의 헤더를 정의하는 요소
+        * 제목 태그 (h1, h2, ... , h6) 
+    * phrasing : 문서의 텍스트이며 문단 내부 레벨로 마크업하는 요소
+        * a, b, i, br
+    * embedded : 이미지, 비디오, 플래시 등의 외부 콘텐츠를 문서 내에 표현하는 요소
+        * embeded 모델은 모두 phrasing 모델 (audio, img, video)
+    * interactive : 사용자와 상호작용을 하는 요소
+        * 대표적으로 form 요소들 (button, input, select, textarea)
+
+
+시멘틱 마크업
+
+    * 브라우저가 잘 이해할 수 있는 코드
+    * 의미에 맞는 요소를 사용
+    * 문서의 구조화
+    * 예시) b(굵은) vs strong(중요한), i(기울어진) vs em(강조하는), s(중간선) vs del(삭제된)
+
+
+BLOCK & INLINE
+
+    * block level : 한 줄에 하나의 요소 표시
+        * 일반적인 모든 요소 포함 (div, h1~h6, p, ul, li, table 등)
+    * inline level : 한 줄에 여러개의 요소 표시
+        * block level의 자식 요소 (span, a, i, img, em, strong 등)
+    * inline level은 block level을 자식으로 가질 수 없으나, 예외 존재(a 태그)
+
