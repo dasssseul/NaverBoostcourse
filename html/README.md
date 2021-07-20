@@ -1,6 +1,6 @@
 # HTML
 
-html 태그
+## html 태그
 
 * h1 ~ h6 : 제목(heading) 태그
 * p : 단락(paragraph) 태그
@@ -72,7 +72,7 @@ html 태그
         * legend : 폼 요소의 제목으로 fieldset 내부에 작성
 
 
-콘텐츠 모델
+## 콘텐츠 모델
 
     * metadata : 콘텐츠의 style, script을 설정하거나 다른 문서와의 관계 등의 정보를 포함하는 요소
         * head 태그 내에 들어가는 태그 (link, meta, script, style, title)
@@ -90,7 +90,7 @@ html 태그
         * 대표적으로 form 요소들 (button, input, select, textarea)
 
 
-시멘틱 마크업
+## 시멘틱 마크업
 
     * 브라우저가 잘 이해할 수 있는 코드
     * 의미에 맞는 요소를 사용
@@ -98,7 +98,7 @@ html 태그
     * 예시) b(굵은) vs strong(중요한), i(기울어진) vs em(강조하는), s(중간선) vs del(삭제된)
 
 
-BLOCK & INLINE
+## BLOCK & INLINE
 
     * block level : 한 줄에 하나의 요소 표시
         * 일반적인 모든 요소 포함 (div, h1~h6, p, ul, li, table 등)
