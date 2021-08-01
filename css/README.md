@@ -117,3 +117,50 @@
             * margin collapse(마진 병합)
                 * 인접한 두 개 이상의 수직 방향 박스의 마진이 하나로 합쳐지는 것
                 * 두 요소의 상하 마진이 인접한 경우 더 큰 마진 값이 적용됨
+
+    * 폰트, 텍스트 
+        * typography
+            * em : 폰트의 전체 높이 
+            * ex : 해당 폰트의 영문 소문자 x의 높이 
+            * baseline : 소문자 x를 기준으로 하단의 라인을 의미 
+            * descender : 소문자에서 baseline 아래로 쳐지는 영역
+            * asender : 소문자 x의 상단 라인 위로 넘어가는 영역
+        * font-family : 글꼴을 지정하는 속성
+            * family-name : 사용할 폰트의 이름, ','로 구분하여 여러 개 선언 가능
+            * generic-family : family-name으로 지정된 글꼴 사용이 불가능할 경우, 브라우저가 대체할 수 있는 폰트가 필요한 경우 선택 가능
+        * line-height : 텍스트 라인의 높이 의미, 행간 제어 
+            * 타이포그래피 구조의 [em 박스] + [상하단의 여백]
+        * font-size : 글꼴의 크기를 지정하는 속성
+            * keyword : xx-small, x-small, small, large ...
+            * length : px, em 등 고정 수치
+            * % : 부모 요소의 font-size 기준의 퍼센트로 지정
+        * font-weight : 글꼴의 굵기 지정
+            * normal, bold, bolder, lighter, number
+        * font-style : 글꼴의 스타일 지정 
+            * normal, italic, oblique
+        * font-variant : 글꼴의 형태 변형
+            * small-caps : 소문자를 작은 대문자로 변형
+        * font 속성의 축약형
+            * font : style|variant|weight|size/line-height|family
+            * font-size와 font-family는 필수 속성
+        * webfont(@font-face) : 웹에 있는 글꼴을 사용자의 로컬 환경으로 다운로드하여 적용하는 속성
+        * vertical-align : inline-level 요소의 수직 정렬을 지정
+            * length : 요소를 지정한 길이 만큼 올리거나 내림, 음수 허용
+            * % : 요소를 line-height를 기준으로 올리거나 내림, 음수 허용
+            * keyword : baseline(기본값), sub, super, top, middle, bottom
+        * text-align : inline-level 텍스트의 정렬 지정
+            * left, right, center, justify(라인 양쪽 끝으로 붙여서 정렬)
+            * block level 요소의 경우 margin을 이용해 정렬 (가운데 정렬 : 0, auto)
+        * text-indent : 텍스트의 들여쓰기 지정
+            * length : 문단의 첫 줄에 대한 들여쓰기, 음수 값 사용 시 왼쪽으로 이동
+            * % : 텍스트를 포함하는 컨테이너 블록의 width를 기준으로 변환된 백분율 값으로 들여쓰기 
+        * text-decoration : 텍스트의 장식 지정
+            * 선의 위치 : none, underline, overline, line-through
+            * 선의 스타일 : solid, double, dotted, dashed, wavy
+        * 단어 관련 속성
+            * white-space : 요소 안의 공백을 어떻게 처리할지 지정
+            * letter-spacing : 글자 간의 간격을 지정
+            * word-spacing : 단어 사이의 간격을 지정
+            * word-break : 단어가 라인 끝에 나올 경우 어떻게 처리할지 지정
+            * word-wrap : 요소를 벗어난 단어의 줄바꿈 지정
+        
